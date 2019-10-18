@@ -141,4 +141,7 @@ include("flatten.jl")
 include("io.jl")
 include("deprecated.jl")
 
+include("precompile.jl")
+_precompile_()
+
 end # module
