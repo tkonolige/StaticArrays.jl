@@ -71,7 +71,7 @@ end
 
 @generated function _inv(::Size{S}, A) where S
     LinearAlgebra.checksquare(A)
-    if prod(S) ≤ 14*14
+    if prod(S) ≤ 20*20
         quote
             @_inline_meta
             LUp = lu(A)
